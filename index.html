@@ -3,395 +3,728 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Premier Plumbing | Reliable Plumbing & Heating Services in Lincolnshire</title>
-  <meta name="description" content="Premier Plumbing – expert boiler installations, bathroom refits, emergency plumbing & central heating across Lincolnshire. 15+ years experience. Fully insured. Call 0800 123 4567." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <title>TradeCraft Web Design | Websites for Tradespeople in Lincolnshire</title>
+  <meta name="description" content="Professional websites for local tradespeople in Lincolnshire. Fixed price of £600 — live within 1 week. Family-run, honest pricing, 100% ownership. Call Chris: 07835 156234." />
+  <meta name="keywords" content="web design Lincolnshire, tradesperson website, plumber website, builder website, electrician website, cheap web design UK, TradeCraft Web Design" />
+  <meta name="author" content="TradeCraft Web Design" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TradeCraft Web Design | Websites for Tradespeople" />
+  <meta property="og:description" content="£600 all-in. Live within 1 week. Designed for Lincolnshire trades. We build websites that work as hard as you do." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/plumbing_hero.png" />
+
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Preload key images -->
+  <link rel="preload" as="image" href="Lincolnshire Image.jpeg" />
 </head>
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <header class="navbar" id="navbar">
-    <div class="container navbar__inner">
-      <a href="#" class="logo" id="logo-link">
-        <svg class="logo__icon" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="19" cy="19" r="19" fill="#1565C0"/>
-          <path d="M12 26 L12 12 L19 12 C22.3 12 24.5 14 24.5 17 C24.5 20 22.3 22 19 22 L12 22" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <path d="M19 22 L26 26" stroke="#42A5F5" stroke-width="2.5" stroke-linecap="round"/>
-        </svg>
-        <span class="logo__text">Premier <span class="logo__accent">Plumbing</span></span>
-      </a>
-
-      <nav class="nav-links" id="nav-links">
-        <a href="#" class="nav-link active">Home</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#gallery" class="nav-link">Gallery</a>
-        <a href="#about" class="nav-link">About Us</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-
-      <div class="navbar__cta">
-        <div class="navbar__phone">
-          <div class="phone__badge">24/7 Emergency</div>
-          <a href="tel:08001234567" class="phone__number" id="phone-header">0800 123 4567</a>
-        </div>
-        <a href="#contact" class="btn btn--primary" id="free-quote-btn">Get a Free Quote</a>
-      </div>
-
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="hero">
-    <div class="hero__bg">
-      <img src="images/hero.png" alt="Professional plumber working on a luxury bathroom" class="hero__img" />
-      <div class="hero__overlay"></div>
-    </div>
-    <div class="container hero__content">
-      <div class="hero__badge">⚡ Available 24/7 — No Call-Out Charge</div>
-      <h1 class="hero__title">Reliable Plumbing &amp; Heating<br/>Services Across Lincolnshire</h1>
-      <p class="hero__sub">Boiler Installations &nbsp;•&nbsp; Bathroom &amp; Kitchen Refits &nbsp;•&nbsp; Emergency Repairs<br/>15 Years Experience &nbsp;•&nbsp; Fully Insured &amp; Gas Safe Registered</p>
-      <div class="hero__actions">
-        <a href="#contact" class="btn btn--primary btn--lg" id="hero-book-btn">Book a Service</a>
-        <a href="tel:08001234567" class="btn btn--outline btn--lg" id="hero-call-btn">📞 Call Now</a>
-      </div>
-    </div>
-    <div class="hero__scroll">
-      <span></span>
-    </div>
-  </section>
-
-  <!-- ===== TRUST BAR ===== -->
-  <section class="trust-bar" id="trust">
-    <div class="container trust-bar__grid">
-      <div class="trust-item">
-        <div class="trust-item__icon">🏆</div>
-        <div class="trust-item__text">
-          <strong>15+ Years</strong>
-          <span>Experience</span>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-item__icon">✅</div>
-        <div class="trust-item__text">
-          <strong>Fully Qualified</strong>
-          <span>&amp; Insured</span>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-item__icon">⭐</div>
-        <div class="trust-item__text">
-          <strong>1,000+ Reviews</strong>
-          <span>5-Star Rated</span>
-        </div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-item__icon">🏠</div>
-        <div class="trust-item__text">
-          <strong>Local Family</strong>
-          <span>Business</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SERVICES ===== -->
-  <section class="section services" id="services">
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
     <div class="container">
-      <div class="section__header">
-        <div class="section__tag">What We Do</div>
-        <h2 class="section__title">Our Expert Services</h2>
-        <p class="section__sub">From emergency callouts to full bathroom transformations — we've got you covered.</p>
-      </div>
-      <div class="services__grid">
-        <div class="service-card" id="service-boiler">
-          <div class="service-card__icon" style="background:#E3F2FD;">🔥</div>
-          <h3 class="service-card__title">Boiler Installation &amp; Repair</h3>
-          <p class="service-card__desc">Gas Safe registered engineers. Worcester Bosch, Vaillant &amp; Baxi specialists. Same-day breakdowns covered.</p>
-          <a href="#contact" class="service-card__link">Learn More →</a>
-        </div>
-        <div class="service-card" id="service-bathroom">
-          <div class="service-card__icon" style="background:#E8F5E9;">🛁</div>
-          <h3 class="service-card__title">Bathroom &amp; Kitchen Plumbing</h3>
-          <p class="service-card__desc">Full bathroom design &amp; fit, kitchen plumbing, tap replacements, and leak repairs. Immaculate every time.</p>
-          <a href="#contact" class="service-card__link">Learn More →</a>
-        </div>
-        <div class="service-card" id="service-emergency">
-          <div class="service-card__icon" style="background:#FFF3E0;">🚨</div>
-          <h3 class="service-card__title">Emergency Plumbing</h3>
-          <p class="service-card__desc">Burst pipes, leaks, blocked drains — we respond fast, 24 hours a day, 7 days a week. No call-out charge.</p>
-          <a href="#contact" class="service-card__link">Learn More →</a>
-        </div>
-        <div class="service-card" id="service-heating">
-          <div class="service-card__icon" style="background:#EDE7F6;">🌡️</div>
-          <h3 class="service-card__title">Central Heating Systems</h3>
-          <p class="service-card__desc">Radiator installation, underfloor heating, system flushes &amp; annual servicing. Warm homes, lower bills.</p>
-          <a href="#contact" class="service-card__link">Learn More →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== GALLERY ===== -->
-  <section class="section gallery" id="gallery" style="background:#F8FAFF;">
-    <div class="container">
-      <div class="section__header">
-        <div class="section__tag">Our Work</div>
-        <h2 class="section__title">Recent Completed Projects</h2>
-        <p class="section__sub">Every job finished to the highest standard — see for yourself.</p>
-      </div>
-      <div class="gallery__grid">
-        <div class="gallery-item gallery-item--large" id="gallery-bathroom">
-          <img src="images/gallery_bathroom.png" alt="Modern fitted bathroom with freestanding bath and rainfall shower" loading="lazy" />
-          <div class="gallery-item__caption">Modern Bathroom Refit — Completed June 2026, Lincoln</div>
-        </div>
-        <div class="gallery-item" id="gallery-boiler">
-          <img src="images/gallery_boiler.png" alt="New Worcester Bosch boiler installation" loading="lazy" />
-          <div class="gallery-item__caption">Worcester Bosch Install — Completed May 2026, Grantham</div>
-        </div>
-        <div class="gallery-item" id="gallery-kitchen">
-          <img src="images/gallery_kitchen.png" alt="Immaculate kitchen sink and tap setup" loading="lazy" />
-          <div class="gallery-item__caption">Kitchen Plumbing — Completed April 2026, Sleaford</div>
-        </div>
-        <div class="gallery-item" id="gallery-heating">
-          <img src="images/gallery_heating.png" alt="Radiator and underfloor heating installation" loading="lazy" />
-          <div class="gallery-item__caption">Underfloor Heating — Completed March 2026, Stamford</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== TESTIMONIALS ===== -->
-  <section class="section testimonials" id="testimonials">
-    <div class="container">
-      <div class="section__header">
-        <div class="section__tag">Customer Reviews</div>
-        <h2 class="section__title">What Our Customers Say</h2>
-        <div class="review-summary">
-          <div class="review-stars">★★★★★</div>
-          <span>4.9 / 5 &nbsp;·&nbsp; 1,043 Google Reviews</span>
-        </div>
-      </div>
-      <div class="testimonials__grid">
-        <div class="review-card" id="review-sarah">
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__text">"Premier Plumbing replaced our boiler on the same day we called. The engineer was professional, tidy, and explained everything clearly. Fantastic service — will definitely use again!"</p>
-          <div class="review-card__author">
-            <img src="images/avatar_sarah.png" alt="Sarah Thompson" class="review-card__avatar" />
-            <div>
-              <strong>Sarah Thompson</strong>
-              <span>Lincoln &nbsp;·&nbsp; Google Review</span>
-            </div>
-          </div>
-        </div>
-        <div class="review-card" id="review-james">
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__text">"Had a burst pipe on a Sunday morning. Premier were here within the hour. No fuss, no mess, completely fixed. Absolute lifesavers. Highly recommend to anyone in Lincolnshire."</p>
-          <div class="review-card__author">
-            <div class="review-card__avatar review-card__avatar--initials" style="background:#1565C0;">JW</div>
-            <div>
-              <strong>James Whitfield</strong>
-              <span>Grantham &nbsp;·&nbsp; Google Review</span>
-            </div>
-          </div>
-        </div>
-        <div class="review-card" id="review-claire">
-          <div class="review-card__stars">★★★★★</div>
-          <p class="review-card__text">"Our full bathroom refit was completed to an incredible standard. The team were respectful, punctual, and the finished result looks like something from a magazine. Worth every penny!"</p>
-          <div class="review-card__author">
-            <div class="review-card__avatar review-card__avatar--initials" style="background:#0288D1;">CD</div>
-            <div>
-              <strong>Claire Donnelly</strong>
-              <span>Stamford &nbsp;·&nbsp; Google Review</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== ABOUT ===== -->
-  <section class="section about" id="about" style="background:#F8FAFF;">
-    <div class="container about__inner">
-      <div class="about__text">
-        <div class="section__tag">About Us</div>
-        <h2 class="section__title" style="text-align:left;">Lincolnshire's Trusted<br/>Family Plumbers</h2>
-        <p>Founded in 2009, Premier Plumbing has been serving homeowners and businesses across Lincolnshire for over 15 years. As a Gas Safe registered, fully insured family business, we take real pride in our work — treating every home as if it were our own.</p>
-        <p>From a dripping tap to a complete central heating installation, our team of qualified engineers deliver a clean, reliable, and stress-free service every time.</p>
-        <ul class="about__list">
-          <li>✔ Gas Safe Registered (No. 567891)</li>
-          <li>✔ £5 Million Public Liability Insurance</li>
-          <li>✔ Which? Trusted Trader Approved</li>
-          <li>✔ Worcester Bosch Accredited Installer</li>
-        </ul>
-        <a href="#contact" class="btn btn--primary" id="about-cta-btn">Request a Free Quote</a>
-      </div>
-      <div class="about__badges">
-        <div class="badge-grid">
-          <div class="trust-badge">
-            <div class="trust-badge__icon">🔒</div>
-            <div class="trust-badge__label">Gas Safe<br/>Registered</div>
-          </div>
-          <div class="trust-badge">
-            <div class="trust-badge__icon">🛡️</div>
-            <div class="trust-badge__label">Fully<br/>Insured</div>
-          </div>
-          <div class="trust-badge">
-            <div class="trust-badge__icon">⭐</div>
-            <div class="trust-badge__label">Which?<br/>Trusted</div>
-          </div>
-          <div class="trust-badge">
-            <div class="trust-badge__icon">🔧</div>
-            <div class="trust-badge__label">Worcester<br/>Accredited</div>
-          </div>
-        </div>
-        <div class="stat-row">
-          <div class="stat"><span class="stat__num">15+</span><span class="stat__label">Years Experience</span></div>
-          <div class="stat"><span class="stat__num">3,200+</span><span class="stat__label">Jobs Completed</span></div>
-          <div class="stat"><span class="stat__num">1,000+</span><span class="stat__label">Happy Customers</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA BANNER ===== -->
-  <section class="cta-banner" id="cta">
-    <div class="container cta-banner__inner">
-      <div class="cta-banner__text">
-        <h2>Ready to Fix Your Plumbing Issues?</h2>
-        <p>Get in touch today for a no-obligation free quote. We're on call 24/7 for emergencies.</p>
-      </div>
-      <div class="cta-banner__actions">
-        <a href="#contact" class="btn btn--white btn--lg" id="cta-quote-btn">Get Your Free Quote Today</a>
-        <a href="tel:08001234567" class="cta-banner__phone" id="cta-phone">📞 0800 123 4567</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section class="section contact" id="contact">
-    <div class="container contact__inner">
-      <div class="contact__info">
-        <div class="section__tag">Get in Touch</div>
-        <h2 class="section__title" style="text-align:left;">Request Your<br/>Free Quote</h2>
-        <div class="contact-detail">
-          <span class="contact-detail__icon">📍</span>
-          <span>14 Church Street, Sleaford, Lincolnshire, NG34 7AH</span>
-        </div>
-        <div class="contact-detail">
-          <span class="contact-detail__icon">📞</span>
-          <a href="tel:08001234567">0800 123 4567</a>
-        </div>
-        <div class="contact-detail">
-          <span class="contact-detail__icon">✉️</span>
-          <a href="mailto:info@premierplumbing.co.uk">info@premierplumbing.co.uk</a>
-        </div>
-        <div class="contact-detail">
-          <span class="contact-detail__icon">🕐</span>
-          <span>Mon–Fri: 7am–8pm &nbsp;|&nbsp; Sat: 8am–5pm<br/>24/7 Emergency Callouts</span>
-        </div>
-      </div>
-      <form class="contact-form" id="contact-form" novalidate>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="07700 900000" required />
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" placeholder="john@example.com" required />
-        </div>
-        <div class="form-group">
-          <label for="service">Service Required</label>
-          <select id="service" name="service">
-            <option value="">Select a service...</option>
-            <option>Boiler Installation / Repair</option>
-            <option>Bathroom or Kitchen Plumbing</option>
-            <option>Emergency Plumbing</option>
-            <option>Central Heating Systems</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Tell us about your job..."></textarea>
-        </div>
-        <button type="submit" class="btn btn--primary btn--full" id="submit-btn">Send My Free Quote Request</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer" id="footer">
-    <div class="container footer__grid">
-      <div class="footer__brand">
-        <a href="#" class="logo logo--light">
-          <svg class="logo__icon" width="32" height="32" viewBox="0 0 38 38" fill="none">
-            <circle cx="19" cy="19" r="19" fill="#1565C0"/>
-            <path d="M12 26 L12 12 L19 12 C22.3 12 24.5 14 24.5 17 C24.5 20 22.3 22 19 22 L12 22" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-            <path d="M19 22 L26 26" stroke="#42A5F5" stroke-width="2.5" stroke-linecap="round"/>
-          </svg>
-          <span class="logo__text" style="color:#fff;">Premier <span class="logo__accent">Plumbing</span></span>
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo" aria-label="TradeCraft Web Design — Home">
+          <img src="TradeCraft Web Logo NO BACKGROUND.png" alt="TradeCraft Web Design logo" />
         </a>
-        <p>Your trusted local plumbing &amp; heating specialists across Lincolnshire. Gas Safe registered, fully insured, and always on call.</p>
-        <div class="footer__socials">
-          <a href="#" aria-label="Facebook" class="social-link">f</a>
-          <a href="#" aria-label="Instagram" class="social-link">in</a>
-          <a href="#" aria-label="Google" class="social-link">G</a>
-        </div>
-      </div>
-      <div class="footer__col">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="#services">Boiler Installation &amp; Repair</a></li>
-          <li><a href="#services">Bathroom &amp; Kitchen Plumbing</a></li>
-          <li><a href="#services">Emergency Plumbing</a></li>
-          <li><a href="#services">Central Heating Systems</a></li>
-          <li><a href="#services">Underfloor Heating</a></li>
+
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="#services" id="nav-services">Services</a></li>
+          <li><a href="#why-website" id="nav-why">Why in 2026?</a></li>
+          <li><a href="#our-work" id="nav-work">Our Work</a></li>
+          <li><a href="#about" id="nav-about">About Us</a></li>
+          <li><a href="#contact" id="nav-contact">Contact</a></li>
         </ul>
-      </div>
-      <div class="footer__col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#testimonials">Reviews</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4>Contact &amp; Hours</h4>
-        <ul class="footer__contact">
-          <li>📍 14 Church Street, Sleaford<br/>Lincolnshire, NG34 7AH</li>
-          <li>📞 <a href="tel:08001234567">0800 123 4567</a></li>
-          <li>✉️ <a href="mailto:info@premierplumbing.co.uk">info@premier<wbr/>plumbing.co.uk</a></li>
-          <li>🕐 Mon–Fri: 7am–8pm<br/>Sat: 8am–5pm<br/>24/7 Emergency</li>
-        </ul>
+
+        <a href="#contact" class="btn btn-primary nav-cta" id="nav-cta-btn">
+          Get in Touch
+        </a>
+
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
-    <div class="footer__bottom">
-      <div class="container footer__bottom-inner">
-        <span>© 2026 Premier Plumbing. All Rights Reserved.</span>
-        <span>Gas Safe Reg. No. 567891 &nbsp;|&nbsp; Company No. 08765432</span>
-        <div class="footer__legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms &amp; Conditions</a>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg" role="img" aria-label="Lincoln Cathedral aerial view, Lincolnshire">
+      <img src="Lincolnshire Image.jpeg" alt="Lincoln Cathedral and the historic city of Lincoln, Lincolnshire" />
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge" aria-label="Trust badge">
+          <span class="dot" aria-hidden="true"></span>
+          Family Run · Based in Lincolnshire
         </div>
+
+        <h1 class="hero-title">
+          We Build Websites<br>
+          That Work <em>as Hard</em><br>
+          as You Do.
+        </h1>
+
+        <p class="hero-subtitle">
+          Professional websites for local tradespeople. Fixed price of <strong style="color: var(--col-gold-lt);">£600</strong> — live within 1 week. No hidden costs. No jargon. Just results.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" id="hero-cta-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16a2 2 0 0 1 .27.92z"/></svg>
+            Contact Us Today
+          </a>
+          <a href="#services" class="btn btn-outline" id="hero-services-btn">
+            See What You Get
+          </a>
+        </div>
+
+        <div class="hero-trust" aria-label="Trust signals">
+          <div class="hero-trust-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Family Run
+          </div>
+          <div class="hero-trust-sep" aria-hidden="true"></div>
+          <div class="hero-trust-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Lincolnshire
+          </div>
+          <div class="hero-trust-sep" aria-hidden="true"></div>
+          <div class="hero-trust-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            Fixed Low Prices
+          </div>
+          <div class="hero-trust-sep" aria-hidden="true"></div>
+          <div class="hero-trust-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            100% Ownership
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-mouse"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       STATS BAR
+       ============================================ -->
+  <section id="stats-bar" aria-label="Quick facts">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal delay-1">
+          <div class="stat-number" data-target="600">£600</div>
+          <div class="stat-label">All-in website price</div>
+        </div>
+        <div class="stat-item reveal delay-2">
+          <div class="stat-number">1 Wk</div>
+          <div class="stat-label">Live within one week</div>
+        </div>
+        <div class="stat-item reveal delay-3">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Years IT experience</div>
+        </div>
+        <div class="stat-item reveal delay-4">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">You own your website</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES SECTION
+       ============================================ -->
+  <section id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="services-header">
+        <span class="section-label">What We Offer</span>
+        <h2 class="section-title" id="services-heading">Simple Pricing.<br><em>No Surprises.</em></h2>
+        <p class="section-subtitle">
+          You work hard for your money. We think you deserve to know exactly what you're paying — before you pay it. Two packages. No extras. No catches.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Package 1: Website -->
+        <div class="service-card featured reveal delay-1" id="service-website">
+          <div class="service-icon" aria-hidden="true">🌐</div>
+          <div class="service-price">£600</div>
+          <div class="service-price-note">One-time, all-inclusive</div>
+          <h3>Your Professional Website</h3>
+          <p>Everything you need to get found online. Designed for tradespeople, built to bring in work — live within 7 days.</p>
+          <ul class="service-features" aria-label="Included features">
+            <li>Custom website designed for your trade</li>
+            <li>Your own .co.uk domain name included</li>
+            <li>Professional email address (e.g. you@yourbusiness.co.uk)</li>
+            <li>Mobile-friendly &amp; Google-optimised</li>
+            <li>Contact form &amp; click-to-call buttons</li>
+            <li>Live within 7 days of starting</li>
+            <li>You own it 100% — always</li>
+          </ul>
+        </div>
+
+        <!-- Package 2: Hosting -->
+        <div class="service-card reveal delay-2" id="service-hosting">
+          <div class="service-icon" aria-hidden="true">🔒</div>
+          <div class="service-price">£9<span style="font-size:1rem;color:var(--col-text-muted)">/mo</span></div>
+          <div class="service-price-note">Monthly, cancel anytime</div>
+          <h3>Hosting &amp; Ongoing Support</h3>
+          <p>Your site stays fast, secure and up to date every month. And if you ever need anything tweaked, just call us.</p>
+          <ul class="service-features" aria-label="Monthly support features">
+            <li>Secure, fast UK website hosting</li>
+            <li>.co.uk domain name registration renewed</li>
+            <li>Security updates &amp; maintenance</li>
+            <li>Priority support from real local people</li>
+            <li>Regular performance checks</li>
+            <li>No call centres, no anonymous tickets</li>
+          </ul>
+        </div>
+
+        <!-- Package 3: Extra features -->
+        <div class="service-card reveal delay-3" id="service-extras">
+          <div class="service-icon" aria-hidden="true">⭐</div>
+          <div class="service-price" style="font-size:1.4rem;padding-top:0.35rem;">What Makes<br>Us Different</div>
+          <div class="service-price-note">&nbsp;</div>
+          <h3>Built for Tradespeople</h3>
+          <p>We're not a generic web agency. Every site we build is designed around what works for trades — because that's all we do.</p>
+          <ul class="service-features" aria-label="Why choose us">
+            <li>Affordable fixed prices — no hourly rates ever</li>
+            <li>Over 15 years IT industry experience</li>
+            <li>Designed specifically for tradespeople</li>
+            <li>Ongoing support from people you know</li>
+            <li>Price guarantee — we'll beat any comparable quote</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Price Guarantee Banner -->
+      <div class="price-guarantee reveal" id="price-guarantee-banner">
+        <div class="price-guarantee-icon" aria-hidden="true">🏆</div>
+        <div>
+          <h4>UK Price Guarantee — We'll Beat Any Comparable Quote</h4>
+          <p>
+            Found a cheaper like-for-like quote from another web designer? Show us. We'll beat it. We built this business to make professional websites affordable for local trades — not to rip you off.
+          </p>
+        </div>
+      </div>
+
+      <!-- Extra feature tiles -->
+      <div class="services-extra" role="list" aria-label="Additional features">
+        <div class="extra-tile reveal delay-1">
+          <div class="extra-tile-icon" aria-hidden="true">📱</div>
+          <div class="extra-tile-text">Mobile-friendly & looks great on any device</div>
+        </div>
+        <div class="extra-tile reveal delay-2">
+          <div class="extra-tile-icon" aria-hidden="true">🔍</div>
+          <div class="extra-tile-text">Google-optimised from day one</div>
+        </div>
+        <div class="extra-tile reveal delay-3">
+          <div class="extra-tile-icon" aria-hidden="true">⚡</div>
+          <div class="extra-tile-text">Fast-loading pages that don't frustrate visitors</div>
+        </div>
+        <div class="extra-tile reveal delay-1">
+          <div class="extra-tile-icon" aria-hidden="true">🤝</div>
+          <div class="extra-tile-text">Talk directly to Chris — never a call centre</div>
+        </div>
+        <div class="extra-tile reveal delay-2">
+          <div class="extra-tile-icon" aria-hidden="true">📍</div>
+          <div class="extra-tile-text">Local Lincolnshire business — we get the area</div>
+        </div>
+        <div class="extra-tile reveal delay-3">
+          <div class="extra-tile-icon" aria-hidden="true">🔑</div>
+          <div class="extra-tile-text">100% ownership — your site, your brand, your rules</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       WHY 2026 SECTION
+       ============================================ -->
+  <section id="why-website" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="why-layout">
+        <div class="why-left">
+          <span class="section-label">The Numbers Don't Lie</span>
+          <h2 class="section-title" id="why-heading">Why Every Tradesperson Needs a Website <em>in 2026</em></h2>
+
+          <div class="why-stats" role="list">
+
+            <div class="stat-card reveal delay-1" role="listitem">
+              <div class="stat-card-number">97%</div>
+              <div class="stat-card-text">
+                <strong>of people search online first</strong>
+                <p>Over 97% of customers search online to find local businesses or tradespeople. If you're not online, you're invisible.</p>
+              </div>
+            </div>
+
+            <div class="stat-card reveal delay-2" role="listitem">
+              <div class="stat-card-number">2–3×</div>
+              <div class="stat-card-text">
+                <strong>more leads with a website</strong>
+                <p>Businesses with a website generate 2–3 times more leads than those without. That's work you're currently leaving on the table.</p>
+              </div>
+            </div>
+
+            <div class="stat-card reveal delay-3" role="listitem">
+              <div class="stat-card-number">60%+</div>
+              <div class="stat-card-text">
+                <strong>of searches happen on phones</strong>
+                <p>More than 60% of local service searches happen on phones. If your site isn't mobile-friendly, you're losing jobs right now.</p>
+              </div>
+            </div>
+
+            <div class="stat-card reveal delay-4" role="listitem">
+              <div class="stat-card-number">10–20%</div>
+              <div class="stat-card-text">
+                <strong>more per job with a professional site</strong>
+                <p>Customers are willing to pay 10–20% more to a company that looks established and reliable online. Trust = higher rates.</p>
+              </div>
+            </div>
+
+            <div class="stat-card reveal delay-5" role="listitem">
+              <div class="stat-card-number">+60%</div>
+              <div class="stat-card-text">
+                <strong>more enquiries for trades with websites</strong>
+                <p>Tradespeople with professional websites see 40–60% more enquiries. The work is out there — you just need to be found.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="why-right">
+          <div class="why-big-stat reveal">
+            <span class="big-num">£600</span>
+            <div class="big-label">One-off investment. Could pay for itself with a single job.</div>
+          </div>
+
+          <div class="why-cta-box reveal delay-2">
+            <h3>Your competition is already online.</h3>
+            <p>
+              While you're relying on word of mouth alone, other local trades are picking up the jobs you're missing. A website doesn't replace your reputation — it amplifies it.
+            </p>
+            <p style="margin-bottom:0">
+              Your website works 24/7. It's answering questions, building trust, and collecting enquiries while you're on-site doing what you do best.
+            </p>
+          </div>
+
+          <div style="margin-top:1.5rem" class="reveal delay-3">
+            <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;" id="why-cta-btn">
+              Get Your Website Built
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       OUR WORK SECTION
+       ============================================ -->
+  <section id="our-work" aria-labelledby="work-heading">
+    <div class="container">
+      <div class="work-header">
+        <span class="section-label">Real Example</span>
+        <h2 class="section-title" id="work-heading">See What Your Website<br><em>Could Look Like</em></h2>
+        <p class="work-intro">
+          This is a real website we built for a local plumbing business. Clean, professional, fast-loading, and built to bring in enquiries. Your website would be tailored specifically to your trade and area.
+        </p>
+      </div>
+
+      <!-- What to Expect Steps -->
+      <div class="what-to-expect-grid reveal" aria-label="Process steps">
+        <div class="expect-step">
+          <div class="expect-num" aria-label="Step 1">1</div>
+          <h4>Quick Chat</h4>
+          <p>Tell us about your trade, your area, and what you need. No jargon, no forms to fill.</p>
+        </div>
+        <div class="expect-step">
+          <div class="expect-num" aria-label="Step 2">2</div>
+          <h4>We Get to Work</h4>
+          <p>We design your site, set up your domain and email. You get to see it before it goes live.</p>
+        </div>
+        <div class="expect-step">
+          <div class="expect-num" aria-label="Step 3">3</div>
+          <h4>Go Live</h4>
+          <p>Your site is live within 7 days. We handle everything — you just wait for the enquiries.</p>
+        </div>
+        <div class="expect-step">
+          <div class="expect-num" aria-label="Step 4">4</div>
+          <h4>We Support You</h4>
+          <p>We're on hand for updates, changes, and questions. Just call or text Chris directly.</p>
+        </div>
+      </div>
+
+      <div style="margin-top: 3rem;">
+        <!-- Tab navigation -->
+        <div class="work-tab-nav" role="tablist" aria-label="Website screenshot sections">
+          <button class="work-tab-btn active" id="tab-hero" role="tab" aria-selected="true" aria-controls="tab-panel-hero" data-tab="hero">Home Page</button>
+          <button class="work-tab-btn" id="tab-services" role="tab" aria-selected="false" aria-controls="tab-panel-services" data-tab="services">Services</button>
+          <button class="work-tab-btn" id="tab-gallery" role="tab" aria-selected="false" aria-controls="tab-panel-gallery" data-tab="gallery">Work Gallery</button>
+        </div>
+
+        <!-- Browser mockup: Hero -->
+        <div class="work-tab-content active" id="tab-panel-hero" role="tabpanel" aria-labelledby="tab-hero">
+          <div class="browser-frame reveal">
+            <div class="browser-bar">
+              <div class="browser-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="browser-url">www.premierplumbinglincs.co.uk</div>
+            </div>
+            <div class="browser-content">
+              <img src="images/plumbing_hero.png" alt="Premier Plumbing Lincolnshire website hero section — professional plumbing website example" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Browser mockup: Services -->
+        <div class="work-tab-content" id="tab-panel-services" role="tabpanel" aria-labelledby="tab-services">
+          <div class="browser-frame">
+            <div class="browser-bar">
+              <div class="browser-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="browser-url">www.premierplumbinglincs.co.uk</div>
+            </div>
+            <div class="browser-content">
+              <img src="images/plumbing_services.png" alt="Premier Plumbing website services section showing service cards" loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Browser mockup: Gallery -->
+        <div class="work-tab-content" id="tab-panel-gallery" role="tabpanel" aria-labelledby="tab-gallery">
+          <div class="browser-frame">
+            <div class="browser-bar">
+              <div class="browser-dots" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="browser-url">www.premierplumbinglincs.co.uk</div>
+            </div>
+            <div class="browser-content">
+              <img src="images/plumbing_gallery.png" alt="Premier Plumbing website work gallery section showing completed projects" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial / quote -->
+      <div class="work-testimonial reveal">
+        <div class="work-testimonial-quote" aria-hidden="true">"</div>
+        <div class="work-testimonial-text">
+          <p>
+            Having a proper website has made a real difference. Customers now find us on Google, see our work, and get in touch — we don't even have to chase leads any more. It's the best money we've spent on the business.
+          </p>
+          <div class="work-testimonial-author">James T.</div>
+          <div class="work-testimonial-role">Plumber &amp; Heating Engineer, Lincolnshire</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT SECTION
+       ============================================ -->
+  <section id="about" aria-labelledby="about-heading">
+    <!-- Header image with overlay -->
+    <div class="about-hero" role="img" aria-label="The Hopgood family — Chris, Hannah and their two children — enjoying a day out in Lincolnshire">
+      <img src="Family Photo 1.jpg" alt="The Hopgood family — Chris, Hannah and their two children at a Lincolnshire waterway lock" />
+      <div class="about-hero-overlay" aria-hidden="true"></div>
+      <div class="about-hero-text">
+        <div class="container">
+          <span class="section-label">About Us</span>
+          <h2 id="about-heading">The Hopgood Family</h2>
+          <p>Proud Lincolnshire locals helping trades build a stronger online presence.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Body content -->
+    <div class="about-body">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-story reveal-left">
+            <p>
+              We are the <strong>Hopgood family</strong> — a family of four based in <strong>Stickford, Lincolnshire</strong>. With over 15 years of experience in the IT industry, we decided to create TradeCraft Web Design to fill a real gap in our local community.
+            </p>
+            <p>
+              We saw too many hardworking plumbers, electricians, builders, roofers, and other tradespeople missing out on valuable work simply because they didn't have a website that worked as hard as they do. So we built a family business dedicated to solving that problem.
+            </p>
+            <p>
+              We don't just design websites — we create practical, fast-loading, mobile-friendly websites that help local trades generate more enquiries and grow their businesses.
+            </p>
+
+            <!-- Team members -->
+            <div class="about-team">
+              <h3>Who We Are</h3>
+              <div class="team-member">
+                <div class="team-avatar" aria-hidden="true">👨‍💻</div>
+                <div class="team-info">
+                  <strong>Chris Hopgood</strong>
+                  <span>Founder &amp; Lead Designer</span>
+                </div>
+              </div>
+              <div class="team-member">
+                <div class="team-avatar" aria-hidden="true">👩‍💼</div>
+                <div class="team-info">
+                  <strong>Hannah Hopgood</strong>
+                  <span>Customer Relations &amp; Project Management</span>
+                </div>
+              </div>
+              <div class="team-member">
+                <div class="team-avatar" aria-hidden="true">❤️</div>
+                <div class="team-info">
+                  <strong>Our Two Children</strong>
+                  <span>Who remind us daily why supporting local families matters</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-values reveal-right">
+            <h3 class="values-title">Our Values</h3>
+            <div class="values-list" role="list">
+
+              <div class="value-item" role="listitem">
+                <div class="value-icon" aria-hidden="true">🤝</div>
+                <div>
+                  <strong>Personal Service</strong>
+                  <p>You'll always deal directly with one of us. Never a call centre or anonymous support ticket.</p>
+                </div>
+              </div>
+
+              <div class="value-item" role="listitem">
+                <div class="value-icon" aria-hidden="true">✨</div>
+                <div>
+                  <strong>Quality Without Complexity</strong>
+                  <p>Beautiful websites that are simple to manage and built to last.</p>
+                </div>
+              </div>
+
+              <div class="value-item" role="listitem">
+                <div class="value-icon" aria-hidden="true">💰</div>
+                <div>
+                  <strong>Affordability</strong>
+                  <p>Fair, transparent pricing with no hidden fees. Good websites shouldn't cost the earth.</p>
+                </div>
+              </div>
+
+              <div class="value-item" role="listitem">
+                <div class="value-icon" aria-hidden="true">📍</div>
+                <div>
+                  <strong>Local Pride</strong>
+                  <p>We're passionate about helping Lincolnshire businesses thrive and keeping money in our local economy.</p>
+                </div>
+              </div>
+
+              <div class="value-item" role="listitem">
+                <div class="value-icon" aria-hidden="true">🔨</div>
+                <div>
+                  <strong>Reliability</strong>
+                  <p>Just like the trades you work in — we show up, do the job properly, and stand by our work.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: Info -->
+        <div class="contact-info reveal-left">
+          <span class="section-label">Get in Touch</span>
+          <h2 id="contact-heading">Let's Get Your<br>Website Built.</h2>
+          <p>
+            Drop us a message, give us a call, or send a text. We'll get back to you fast — usually the same day. No sales pitch. Just a straight conversation about what you need.
+          </p>
+
+          <div class="contact-methods" role="list">
+            <a href="tel:07835156234" class="contact-method" id="contact-phone" role="listitem" aria-label="Call or text Chris on 07835 156234">
+              <div class="contact-method-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.35 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16a2 2 0 0 1 .27.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-method-label">Call or Text</span>
+                <span class="contact-method-value">07835 156234</span>
+              </div>
+            </a>
+
+            <a href="mailto:Chris@TradeCraftWeb.co.uk" class="contact-method" id="contact-email" role="listitem" aria-label="Email Chris at Chris@TradeCraftWeb.co.uk">
+              <div class="contact-method-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-method-label">Email</span>
+                <span class="contact-method-value">Chris@TradeCraftWeb.co.uk</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-promise">
+            <strong>⚡ Fast response, always.</strong><br>
+            We typically reply within a few hours — often the same day. You'll always speak to Chris or Hannah directly. Never a bot, never a call centre.
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="contact-form-wrap reveal-right">
+          <h3>Send Us a Message</h3>
+          <p>Tell us your trade, your area, and what you're looking for. We'll come back to you with a straight answer.</p>
+
+          <form id="contact-form" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Your Name *</label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  placeholder="e.g. Dave Smith"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="contact-trade">Your Trade</label>
+                <input
+                  type="text"
+                  id="contact-trade"
+                  name="trade"
+                  placeholder="e.g. Plumber, Electrician..."
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email-input">Email Address *</label>
+              <input
+                type="email"
+                id="contact-email-input"
+                name="email"
+                placeholder="your@email.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone-input">Phone / Mobile (optional)</label>
+              <input
+                type="tel"
+                id="contact-phone-input"
+                name="phone"
+                placeholder="07xxx xxxxxx"
+                autocomplete="tel"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Your Message *</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                placeholder="Tell us a bit about your business and what you need..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn-primary" id="contact-submit-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Send Message
+              </button>
+              <p class="form-note">
+                We'll get back to you within a few hours. By submitting you agree to us contacting you about your enquiry.
+              </p>
+            </div>
+          </form>
+
+          <!-- Success message -->
+          <div class="form-success" id="form-success" role="alert" aria-live="polite">
+            <div class="form-success-icon" aria-hidden="true">✅</div>
+            <h3>Message Sent!</h3>
+            <p>Thanks for getting in touch. Chris will be in touch with you shortly.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="TradeCraft Web Logo NO BACKGROUND.png" alt="TradeCraft Web Design" />
+          <p>
+            Helping Lincolnshire tradespeople get online — affordably, quickly, and without the headaches. Family run from Stickford, Lincolnshire.
+          </p>
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.5rem;">
+            <span style="font-size:0.75rem;background:rgba(200,146,42,0.1);border:1px solid rgba(200,146,42,0.2);color:var(--col-gold);padding:0.25rem 0.6rem;border-radius:2rem;">Family Run</span>
+            <span style="font-size:0.75rem;background:rgba(200,146,42,0.1);border:1px solid rgba(200,146,42,0.2);color:var(--col-gold);padding:0.25rem 0.6rem;border-radius:2rem;">Lincolnshire</span>
+            <span style="font-size:0.75rem;background:rgba(200,146,42,0.1);border:1px solid rgba(200,146,42,0.2);color:var(--col-gold);padding:0.25rem 0.6rem;border-radius:2rem;">15+ Years Experience</span>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul role="list">
+            <li><a href="#services">Services &amp; Pricing</a></li>
+            <li><a href="#why-website">Why You Need a Website</a></li>
+            <li><a href="#our-work">Our Work</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address>
+            <a href="tel:07835156234">📞 07835 156234</a><br>
+            <a href="mailto:Chris@TradeCraftWeb.co.uk">✉️ Chris@TradeCraftWeb.co.uk</a><br>
+            <br>
+            Based in Stickford,<br>
+            Lincolnshire
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 TradeCraft Web Design. All rights reserved. Built with ❤️ in Lincolnshire.</p>
+        <p>Helping local trades get online since 2026. <a href="mailto:Chris@TradeCraftWeb.co.uk">Get in touch</a>.</p>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
