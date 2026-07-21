@@ -1225,8 +1225,8 @@ body {
 }
 
 .team-avatar {
-  width: 44px;
-  height: 44px;
+  width: 60px;
+  height: 60px;
   background: rgba(200,146,42,0.15);
   border: 1px solid rgba(200,146,42,0.3);
   border-radius: 50%;
