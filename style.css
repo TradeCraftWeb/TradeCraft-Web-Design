@@ -159,7 +159,7 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 1.1rem 0;
+  padding: 0.25rem 0;
   transition: all 0.35s ease;
 }
 
@@ -168,7 +168,7 @@ body {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--col-border);
-  padding: 0.7rem 0;
+  padding: 0.2rem 0;
   box-shadow: var(--shadow-md);
 }
 
@@ -177,6 +177,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  overflow: visible;
 }
 
 .nav-logo {
@@ -188,7 +189,7 @@ body {
 }
 
 .nav-logo img {
-  height: 170px;
+  height: 70px;
   width: auto;
   transition: transform 0.3s ease;
   filter: drop-shadow(0 2px 8px rgba(200,146,42,0.3));
@@ -1127,7 +1128,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center 10%;
 }
 
 .about-hero-overlay {
@@ -1487,6 +1488,21 @@ body {
   height: 130px;
   resize: vertical;
   line-height: 1.6;
+}
+
+.form-group input[type="file"] {
+  padding: 0.6rem 1rem;
+  border-style: dashed;
+  border-color: rgba(255,255,255,0.12);
+  color: var(--col-text-muted);
+  cursor: pointer;
+  -webkit-appearance: auto;
+}
+.form-group input[type="file"]:hover,
+.form-group input[type="file"]:focus {
+  border-color: rgba(200,146,42,0.5);
+  background: rgba(200,146,42,0.04);
+  color: var(--col-text);
 }
 
 .form-row {
