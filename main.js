@@ -211,26 +211,50 @@ function initContactForm() {
     submitBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="spin" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg> Sending...';
     submitBtn.disabled = true;
 
-    // Simulate sending (replace with actual form submission endpoint)
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    // Remove any previous submission error
+    const prevErr = form.querySelector('.submit-error');
+    if (prevErr) prevErr.remove();
 
-    // Show success
-    form.style.display = 'none';
-    if (successMsg) {
-      successMsg.classList.add('show');
-    }
+    try {
+      const response = await fetch('https://formspree.io/f/mrenlnkj', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      });
 
-    // Reset after 8 seconds
-    setTimeout(() => {
-      form.style.display = 'block';
-      form.reset();
-      if (successMsg) {
-        successMsg.classList.remove('show');
+      if (response.ok) {
+        // Show success message
+        form.style.display = 'none';
+        if (successMsg) {
+          successMsg.classList.add('show');
+        }
+
+        // Reset after 8 seconds
+        setTimeout(() => {
+          form.style.display = 'block';
+          form.reset();
+          if (successMsg) {
+            successMsg.classList.remove('show');
+          }
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+          clearFieldErrors(form);
+        }, 8000);
+      } else {
+        // Server returned an error
+        throw new Error('Server error');
       }
+    } catch (err) {
+      // Restore button and show an inline error
       submitBtn.innerHTML = originalText;
       submitBtn.disabled = false;
-      clearFieldErrors(form);
-    }, 8000);
+
+      const errMsg = document.createElement('p');
+      errMsg.className = 'submit-error';
+      errMsg.textContent = 'Sorry, something went wrong. Please try again or email us directly.';
+      errMsg.style.cssText = 'color:#fc8181;font-size:0.85rem;margin-top:0.75rem;';
+      form.querySelector('.form-submit-row').appendChild(errMsg);
+    }
   });
 
   // Real-time validation on blur
