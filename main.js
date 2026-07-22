@@ -216,10 +216,18 @@ function initContactForm() {
     if (prevErr) prevErr.remove();
 
     try {
+      // Build FormData manually — Formspree's free plan does not support file uploads.
+      const data = new FormData();
+      data.append('name',    document.getElementById('contact-name').value.trim());
+      data.append('trade',   document.getElementById('contact-trade').value.trim());
+      data.append('email',   document.getElementById('contact-email-input').value.trim());
+      data.append('phone',   document.getElementById('contact-phone-input').value.trim());
+      data.append('message', document.getElementById('contact-message').value.trim());
+
       const response = await fetch('https://formspree.io/f/mrenlnkj', {
         method: 'POST',
         headers: { 'Accept': 'application/json' },
-        body: new FormData(form)
+        body: data
       });
 
       if (response.ok) {
